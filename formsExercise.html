@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Forms Exercise w/ Fieldsets, Legends, Divs, Labels, and Inputs: Select, Number, Date,Time, Radio, Textarea, Checkbox, &Submit">
+    <title>Survey</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Customer Experience Survey</legend>
+        <form>
+            <div>
+                <label for="storeNumber">Store Number</label>
+                <select name="storeNumber" id="storeNumber">
+                    <option hidden value="selectAStore">Select A Store</option>
+                    <option value="3109">3109</option>
+                    <option value="2421">2421</option>
+                    <option value="5357">5357</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>When you visited:</legend>
+                <div>
+                    <label for="dateVisited">Date Visited</label>
+                    <input type="date" name="dateVisited" id="dateVisited" min=2021-01-01 max=2021-12-31>
+                </div>
+                <div>
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time">
+                </div>
+            </fieldset>
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <fieldset>
+                <legend>Gender</legend>
+                <div>
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female" value="Female" checked>
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="experienceStatement">Tell us about your experience:</label>
+                <br>
+                <textarea name="experienceStatement" id="experienceStatement" cols="20" rows="2"></textarea>
+            </div>
+            <div>
+                <label for="timesVisited">Times visited in the last month:</label>
+                <br>
+                <input type="number" name="timesVisited" id="timesVisited" min="1" max="30">
+            </div>
+            <div>
+                <input type="checkbox" name="contactCheck" id="contactCheck" required>
+                <label for="contactCheck">Please check the box if you would be willing to be contacted about your
+                    experience</label>
+            </div>
+            <div>
+                <label for="pw">Password</label>
+                <input type="password" name="pw" id="pw" pattern=".{5,10}"
+                    title="Please enter a password that is 5 to 10 characters in length">
+            </div>
+            <input type="reset">
+            <button>Submit</button>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
