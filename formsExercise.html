@@ -17,7 +17,7 @@
             <div>
                 <label for="storeNumber">Store Number</label>
                 <select name="storeNumber" id="storeNumber">
-                    <option hidden value="selectAStore">Select A Store</option>
+                    <option hidden>Select A Store</option>
                     <option value="3109">3109</option>
                     <option value="2421">2421</option>
                     <option value="5357">5357</option>
@@ -27,7 +27,7 @@
                 <legend>When you visited:</legend>
                 <div>
                     <label for="dateVisited">Date Visited</label>
-                    <input type="date" name="dateVisited" id="dateVisited" min=2021-01-01 max=2021-12-31>
+                    <input type="date" name="dateVisited" id="dateVisited" min="2021-01-01" max="2021-12-31">
                 </div>
                 <div>
                     <label for="time">Time</label>
@@ -65,8 +65,7 @@
             </div>
             <div>
                 <input type="checkbox" name="contactCheck" id="contactCheck" required>
-                <label for="contactCheck">Please check the box if you would be willing to be contacted about your
-                    experience</label>
+                <label for="contactCheck">Please check the box if you would be willing to be contacted about your experience</label>
             </div>
             <div>
                 <label for="pw">Password</label>
@@ -74,7 +73,7 @@
                     title="Please enter a password that is 5 to 10 characters in length">
             </div>
             <input type="reset">
-            <button>Submit</button>
+            <input type="submit">
         </form>
     </fieldset>
 
